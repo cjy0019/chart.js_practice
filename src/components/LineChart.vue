@@ -1,5 +1,5 @@
 <template>
-  <canvas id="lineChart" width="400" height="400"></canvas>
+  <canvas ref="lineChart" id="lineChart" width="400" height="400"></canvas>
 </template>
 
 <script>
@@ -32,7 +32,8 @@ const config = {
 
 export default {
   mounted() {
-    const ctx = document.getElementById('lineChart').getContext('2d');
+    // const ctx = document.querySelector('#lineChart').getContext('2d');
+    const ctx = this.$refs.lineChart.getContext('2d');
     const myChart = new Chart(ctx, config);
     console.log(myChart);
   },
