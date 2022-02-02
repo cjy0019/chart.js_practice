@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Chart from 'chart.js';
+// import Chart from 'chart.js';
 const labels = ['January', 'February', 'March', 'April', 'May', 'June'];
 
 const data = {
@@ -34,7 +34,7 @@ export default {
   mounted() {
     // const ctx = document.querySelector('#lineChart').getContext('2d');
     const ctx = this.$refs.lineChart.getContext('2d');
-    const myChart = new Chart(ctx, config);
+    const myChart = new this.$_Chart(ctx, config);
     console.log(myChart);
   },
 };
