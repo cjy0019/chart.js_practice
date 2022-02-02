@@ -2,7 +2,7 @@
 
 # chart-lib
 
-chart.js 연습용 레포지토리 입니다.
+chart.js 라이브러리 모듈화 연습용 레포지토리입니다.
 
 ## TODO
 
